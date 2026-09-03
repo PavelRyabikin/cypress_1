@@ -1,0 +1,20 @@
+{
+  "name": "cypress_1",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Pavel Ryabikin",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test:chrome": "cypress run --browser chrome",
+    "test:chrome:headed": "cypress run --browser chrome --headed",
+    "test:firefox": "cypress run --browser firefox",
+    "test:firefox:headed": "cypress run --browser firefox --headed"
+  },
+  "devDependencies": {
+    "cypress": "^16.0.0"
+  },
+  "allowScripts": {
+    "cypress@16.0.0": true
+  }
+}
