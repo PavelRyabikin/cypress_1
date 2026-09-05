@@ -31,8 +31,8 @@ Cypress.Commands.add("loginWithEmptyPassword", (email) => {
 });
 
 Cypress.Commands.add("addBook", (title, description, author) => {
-  cy.get(".card-title").then(($books) => {
-    const bookExists = [...$books].some(
+  cy.get("body").then(($body) => {
+    const bookExists = [...$body.find(".card-title")].some(
       (book) => book.innerText.trim() === title,
     );
 
